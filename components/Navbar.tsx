@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "@/public/logo.png"
 import { MdOutlineShoppingCart } from "react-icons/md";
 import store from "@/store/store";
 export default function NavBar() {
@@ -10,7 +11,7 @@ export default function NavBar() {
       <div>
         <Link href="/">
           <Image
-            src={require("@/public/logo.png")}
+            src={logo}
             alt="logo"
             className="w-14 ml-5"
           />
